@@ -1,0 +1,28 @@
+function Hero() {
+  return (
+    <header id="inicio" className="hero d-flex align-items-center">
+      <div className="container">
+        <div className="row align-items-center g-4">
+          <div className="col-lg-6">
+            <p className="hero-tag">Bienvenido a PixelNova</p>
+            <h1 className="hero-title">Descubre tu próximo juego favorito</h1>
+            <p className="lead">
+              Explora categorías, conoce los lanzamientos más esperados y encuentra
+              recomendaciones hechas por gamers para gamers.
+            </p>
+            <a href="#destacados" className="btn btn-pixel btn-lg">Ver juegos destacados</a>
+          </div>
+          <div className="col-lg-6">
+            <img
+              src= "/img/Portada.jpg"
+              alt="Videojuego destacado: Shadow Strike"
+              className="img-fluid hero-img"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+  )
+}
+
+export default Hero

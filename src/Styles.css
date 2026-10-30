@@ -1,0 +1,144 @@
+
+:root {
+  --fondo: #1a1a2e;
+  --fondo-claro: #222244;
+  --tarjeta: #2d2d5a;
+  --color-principal: #ff6b35;
+  --texto: #ffffff;
+  --texto-suave: #cfcfe6;
+}
+
+
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: Arial, sans-serif;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+.nav-pixel {
+  background-color: #111122;
+}
+
+.brand {
+
+  font-weight: bold;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.brand span {
+  color: var(--color-principal);
+}
+
+.nav-link:hover {
+  color: var(--color-principal) !important;
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  background-color: var(--fondo-claro);
+}
+
+.hero-tag {
+  color: var(--color-principal);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-img {
+
+  border-radius: 12px;
+}
+
+.btn-pixel {
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn-pixel:hover {
+  background-color: #e55a28;
+  color: white;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-alt {
+  background-color: var(--fondo-claro);
+}
+
+.section-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.category-card {
+
+  background-color: var(--tarjeta);
+  border-radius: 12px;
+  padding: 25px 10px;
+}
+
+.category-card:hover {
+  background-color: var(--color-principal);
+}
+
+.category-icon {
+  font-size: 2.5rem;
+}
+
+
+.game-card {
+  background-color: var(--tarjeta);
+  color: var(--texto);
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.game-card .card-text {
+  color: var(--texto-suave);
+}
+
+.badge-pixel {
+  background-color: var(--color-principal);
+}
+
+.news-card {
+
+  background-color: var(--tarjeta);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid var(--color-principal);
+}
+
+.news-tag {
+  color: var(--color-principal);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: #111122;
+  color: var(--texto-suave);
+  padding: 30px 0;
+}
