@@ -1,3 +1,8 @@
+import ShadowStrike from '../assets/shadow-strike.jpg'
+import LostHorizons from '../assets/lost-horizons.jpg'
+import GoalLegends from '../assets/goal-legends.jpg'
+import EmpireTactics from '../assets/empire-tactics.jpg'
+
 export const categories = [
   { id: 1, nombre: 'Acción', icono: '⚔️' },
   { id: 2, nombre: 'Aventura', icono: '🗺️' },
@@ -11,28 +16,28 @@ export const games = [
     nombre: 'Shadow Strike',
     genero: 'Acción',
     descripcion: 'Combates rápidos en una ciudad futurista llena de peligros.',
-    imagen: '/img/shadow-strike.jpg',
+    imagen: ShadowStrike,
   },
   {
     id: 2,
     nombre: 'Lost Horizons',
     genero: 'Aventura',
     descripcion: 'Explora islas misteriosas y resuelve antiguos acertijos.',
-    imagen: '/img/lost-horizons.jpg',
+    imagen: LostHorizons,
   },
   {
     id: 3,
     nombre: 'Goal Legends',
     genero: 'Deportes',
     descripcion: 'Arma tu equipo y compite en torneos internacionales.',
-    imagen: '/img/goal-legends.jpg',
+    imagen: GoalLegends,
   },
   {
     id: 4,
     nombre: 'Empire Tactics',
     genero: 'Estrategia',
     descripcion: 'Construye tu imperio y vence con inteligencia.',
-    imagen: '/img/empire-tactics.jpg',
+    imagen: EmpireTactics,
   },
 ]
 

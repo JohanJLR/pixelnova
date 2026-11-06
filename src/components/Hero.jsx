@@ -1,3 +1,5 @@
+import Portada from '../assets/Portada.jpg'
+
 function Hero() {
   return (
     <header id="inicio" className="hero d-flex align-items-center">
@@ -14,7 +16,7 @@ function Hero() {
           </div>
           <div className="col-lg-6">
             <img
-              src= "/img/Portada.jpg"
+              src= {Portada}
               alt="Videojuego destacado: Shadow Strike"
               className="img-fluid hero-img"
             />
