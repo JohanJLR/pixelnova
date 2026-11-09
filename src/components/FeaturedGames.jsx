@@ -7,7 +7,7 @@ function FeaturedGames() {
       <div className="container">
         <h2 className="section-title">Juegos destacados</h2>
         <div className="row g-4">
-          {games.map((game) => (
+          {games.slice(0, 4).map((game) => (
             <div className="col-12 col-sm-6 col-lg-3" key={game.id}>
               <GameCard
                 nombre={game.nombre}

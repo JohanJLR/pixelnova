@@ -1,7 +1,12 @@
-function Navbar() {
+import { Link, useLocation } from 'react-router-dom'
+
+function Navbar({ totalFavoritos }) {
+  const { pathname } = useLocation()
+  const enInicio = pathname === '/'
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top px-3 nav-pixel">
-      <a className="navbar-brand brand" href="#inicio">PIXEL<span>NOVA</span></a>
+      <Link className="navbar-brand brand" to="/">PIXEL<span>NOVA</span></Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -15,10 +20,21 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="menu">
         <ul className="navbar-nav ms-auto">
-          <li className="nav-item"><a className="nav-link" href="#inicio">Inicio</a></li>
-          <li className="nav-item"><a className="nav-link" href="#categorias">Categorías</a></li>
-          <li className="nav-item"><a className="nav-link" href="#destacados">Destacados</a></li>
-          <li className="nav-item"><a className="nav-link" href="#novedades">Novedades</a></li>
+          <li className="nav-item"><Link className="nav-link" to="/">Inicio</Link></li>
+          {enInicio && (
+            <>
+              <li className="nav-item"><a className="nav-link" href="#categorias">Categorías</a></li>
+              <li className="nav-item"><a className="nav-link" href="#destacados">Destacados</a></li>
+              <li className="nav-item"><a className="nav-link" href="#novedades">Novedades</a></li>
+            </>
+          )}
+          <li className="nav-item"><Link className="nav-link" to="/catalogo">Catálogo</Link></li>
+          <li className="nav-item">
+
+            <Link className="nav-link" to="/favoritos">
+              Mis favoritos <span className="badge badge-pixel">{totalFavoritos}</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

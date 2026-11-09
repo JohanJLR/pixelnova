@@ -11,34 +11,24 @@ export const categories = [
 ]
 
 export const games = [
-  {
-    id: 1,
-    nombre: 'Shadow Strike',
-    genero: 'Acción',
+  { id: 1, nombre: 'Shadow Strike', genero: 'Acción',
     descripcion: 'Combates rápidos en una ciudad futurista llena de peligros.',
-    imagen: ShadowStrike,
-  },
-  {
-    id: 2,
-    nombre: 'Lost Horizons',
-    genero: 'Aventura',
+    imagen: ShadowStrike },
+  { id: 2, nombre: 'Lost Horizons', genero: 'Aventura',
     descripcion: 'Explora islas misteriosas y resuelve antiguos acertijos.',
-    imagen: LostHorizons,
-  },
-  {
-    id: 3,
-    nombre: 'Goal Legends',
-    genero: 'Deportes',
+    imagen: LostHorizons },
+  { id: 3, nombre: 'Goal Legends', genero: 'Deportes',
     descripcion: 'Arma tu equipo y compite en torneos internacionales.',
-    imagen: GoalLegends,
-  },
-  {
-    id: 4,
-    nombre: 'Empire Tactics',
-    genero: 'Estrategia',
+    imagen: GoalLegends },
+  { id: 4, nombre: 'Empire Tactics', genero: 'Estrategia',
     descripcion: 'Construye tu imperio y vence con inteligencia.',
-    imagen: EmpireTactics,
-  },
+    imagen: EmpireTactics },
+  { id: 5, nombre: 'Speed Rush', genero: 'Carreras',
+    descripcion: 'Compite en circuitos urbanos a toda velocidad.',
+    imagen: EmpireTactics },
+  { id: 6, nombre: 'Mystic Realms', genero: 'Rol',
+    descripcion: 'Crea tu héroe y recorre reinos llenos de magia.',
+    imagen: EmpireTactics },
 ]
 
 export const news = [
